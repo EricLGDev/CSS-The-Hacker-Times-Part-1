@@ -112,8 +112,13 @@ header, main, .secondary-main {
 }
 
 .ux-ui-grid img {
-    /* border: 1px groove #777; */
     padding: 4%;
 }
 .ux-ui-grid img:hover {
-    transform: scale(1.05)}
+    transform: scale(1.05)
+}
+
+/* javascript page */
+.javascript-article img {
+    max-width: 35em;
+}
