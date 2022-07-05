@@ -9,8 +9,13 @@ header {
     font-family: Abril Fatface;
 }
 
-h1 {
+.main-title {
     text-align: center;
+}
+
+.main-title a {
+    text-decoration: none;
+    color: black;
 }
 
 h5 {
@@ -24,24 +29,23 @@ nav {
 
 ul{
     padding: 5px 7px;
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
 }
 
 nav li {
     display: inline;
-    color: #777;
     padding: 6px;
     
 }
 
-a {
+a:not(.main-title a) {
     text-decoration: none;
     color: #777;
 }
 
 header, main, .more-articles {
-    padding: 0em 2em;
+    padding: 0em 0em 0em 1.5em
 }
 .article-title {
     font-family: Roboto Slab;
@@ -55,7 +59,24 @@ header, main, .more-articles {
     margin: auto;
 }
 
+.newspaper-container:hover {
+    box-shadow: 3px 3px rgba(105, 103, 103, 0.777);
+}
+
 .more-articles {
     display: grid;
     grid-template-columns: 20em 20em;
+    max-width: 50%;
+}
+
+.more-articles section {
+    border-top: 1px solid lightgray;
+}
+
+.article-2 {
+    border-right: 1px solid lightgray;
+}
+
+.article-3 {
+    padding-left: 1.2em;
 }
