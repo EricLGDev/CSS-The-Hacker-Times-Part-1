@@ -5,14 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+  <script src="../assets/index.js"></script>
   <title>Hacker Times</title>
 </head>
-<body>
+<body onload=display_ct();>
   <!-- NEWSPAPER CONTAINER -->
   <div class="newspaper-container">
     <!-- header -->
     <header>
-      <div class="date">JANUARY 1, 1970</div>
+      <div class="date"><span id="ct"></span></div>
       <h1 class="main-title"><a href="main.html">The Hacker Times</a></h1>
     </header>
     <!-- navigation -->
