@@ -44,7 +44,7 @@ a:not(.main-title a) {
     color: #777;
 }
 
-header, main, .more-articles {
+header, main, .secondary-main {
     padding: 0em 0em 0em 1.5em
 }
 .article-title {
@@ -61,15 +61,16 @@ header, main, .more-articles {
 
 .newspaper-container:hover {
     box-shadow: 3px 3px rgba(105, 103, 103, 0.777);
+    transform: scale(1.01);
 }
 
-.more-articles {
+.secondary-main {
     display: grid;
     grid-template-columns: 20em 20em;
     max-width: 50%;
 }
 
-.more-articles section {
+.secondary-main section {
     border-top: 1px solid lightgray;
 }
 
@@ -80,3 +81,39 @@ header, main, .more-articles {
 .article-3 {
     padding-left: 1.2em;
 }
+
+/* html&css page */
+.css-article {
+    padding: 1.5em;
+
+}
+
+.css-article h2 {
+    border-top: 1px solid #777;
+    padding-top: 2em;
+}
+
+.css-article img{
+    object-fit: contain;
+    max-width: 35em;
+}
+
+/* ux & ui page */
+.ux-ui-article img {
+    object-fit: contain;
+    max-width: 35em;
+}
+
+.ux-ui-grid {
+    display: grid;
+    grid-template-columns: 14.5em 14.5em 14.5em;
+    grid-template-rows: 10em 10em 10em 10em;
+    
+}
+
+.ux-ui-grid img {
+    /* border: 1px groove #777; */
+    padding: 4%;
+}
+.ux-ui-grid img:hover {
+    transform: scale(1.05)}
